@@ -50,8 +50,8 @@ function initHTML(){
 		temp.className = "cell";
 		temp.style.backgroundColor = shittyColor(solutionBoard.get(i%5, (i-(i%5))/5));
 		solutionGrid.appendChild(temp);
-		temp.style.width = "8px";
-		temp.style.height = "8px";
+		temp.style.width = "25px";
+		temp.style.height = "25px";
 		(i+1)%5 == 0 ? solutionGrid.appendChild(document.createElement("br")) : {} ;
 	}
 }
