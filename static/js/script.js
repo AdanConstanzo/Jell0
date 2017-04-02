@@ -233,7 +233,7 @@ function newPuzzle(board){
 	}
 }
 
-function onAfterClick(){
+$scope.onAfterClick = function(){
 	console.log("yep");
 	history.go(0);
 }
