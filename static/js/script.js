@@ -52,6 +52,7 @@ function initHTML(){
 		solutionGrid.appendChild(temp);
 		temp.style.width = "25px";
 		temp.style.height = "25px";
+		temp.style.borderRadius = "25px";
 		(i+1)%5 == 0 ? solutionGrid.appendChild(document.createElement("br")) : {} ;
 	}
 }
@@ -233,7 +234,7 @@ function newPuzzle(board){
 	}
 }
 
-$scope.onAfterClick = function(){
+function onAfterClick(){
 	console.log("yep");
 	history.go(0);
 }
