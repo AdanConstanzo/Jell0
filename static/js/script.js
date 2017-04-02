@@ -1,6 +1,6 @@
 var gameBoard;
 var solutionBoard;
-alert("For Mobile Use Only Switch To Mobile Please")
+//alert("For Mobile Use Only Switch To Mobile Please")
 init();
 
 function init(){
