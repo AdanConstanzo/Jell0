@@ -15,5 +15,6 @@ if(app.get('port')=== 3000)
 }
 else
 {
+	console.log("wasup")
 	app.listen(app.get('port'))
 }
