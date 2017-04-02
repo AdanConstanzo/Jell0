@@ -158,6 +158,7 @@ var theGrid = document.getElementById('grid'),
 	num;
 	var aGrid = document.getElementById("grid")
 	aGrid.addEventListener('touchstart', function(e){
+		e.preventDefault()
 			touchobj = e.changedTouches[0] // reference first touch point
 			startx = parseInt(touchobj.clientX) // get x coord of touch point
 			starty = parseInt(touchobj.clientY)
@@ -166,6 +167,7 @@ var theGrid = document.getElementById('grid'),
 	}, false)
 
 	aGrid.addEventListener('touchend', function(e){
+			e.preventDefault()
 			var touchobj = e.changedTouches[0] // reference first touch point for this event
 			var distx = parseInt(touchobj.clientX) - startx
 			var disty = parseInt(touchobj.clientY) - starty
